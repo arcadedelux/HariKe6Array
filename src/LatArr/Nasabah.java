@@ -8,7 +8,7 @@ public class Nasabah{
   private String namaLengkap;
   private BigDecimal saldo;
 
-  public Nasabah(String cif,String namaLengkap,BigDecimal saldo){
+public Nasabah(String cif,String namaLengkap,BigDecimal saldo){
 this.cif= cif;
 this.namaLengkap = namaLengkap;
 this.saldo= saldo;

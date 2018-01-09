@@ -8,7 +8,7 @@ public class ArrayMap{
      berkas.put("laporan 2017","untung");
      berkas.put("laporan 2018","untung juga");
 
-     System.out.println(berkas.get("laporan2018"));
+     System.out.println(berkas.get("laporan 2018"));
 
      berkas.forEach((kunci,nilai) ->{
         System.out.println(String.format("Kata kunci %s dan nilainya adalah %s",kunci,nilai));
