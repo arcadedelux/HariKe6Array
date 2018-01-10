@@ -6,6 +6,12 @@ public class Kelas{
   private Integer tahunAjaran;
   private String jurusan;
 
+public Kelas(String nama,Integer tahunAjaran,String jurusan){
+this.nama = nama;
+this.tahunAjaran = tahunAjaran;
+this.jurusan = jurusan;
+
+}
 
   public String getNama(){
     return this.nama;

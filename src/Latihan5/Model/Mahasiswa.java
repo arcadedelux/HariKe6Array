@@ -1,24 +1,20 @@
 package Latihan5.Model;
 
-import java.util.ArrayList;
-import java.util.List;
+
 import java.time.LocalDate;
 
-public class Mahasiswa extends Kelas{
+public class Mahasiswa {
   private String nim,nama;
   private LocalDate tanggalLahir;
   private Integer angkatan;
   private Kelas kelas;
-  private Kelas jurusan;
 
-  public Mahasiswa (String nim,String nama, LocalDate tanggalLahir,Integer angkatan,Kelas kelas,Kelas jurusan){
+  public Mahasiswa (String nim,String nama, LocalDate tanggalLahir,Integer angkatan,Kelas kelas){
   this.nim = nim;
   this.nama= nama;
   this.tanggalLahir = tanggalLahir;
   this.angkatan=angkatan;
-    Kelas tab = new Kelas();
-    tab.getNama();
-    tab.getJurusan();
+  this.kelas = kelas;
 }
 
 
@@ -60,25 +56,7 @@ public class Mahasiswa extends Kelas{
   }
 
   public String toString(){
-    return String.format("{Nim : %s,Nama : %s,Tanggal Lahir: %s,Angkatan : %s,Nama Kelas : %s,Jurusan : %s}",nim,nama,tanggalLahir,angkatan,kelas,super.getJurusan());
+    return String.format("{Nim : %s,Nama : %s,Tanggal Lahir: %s,Angkatan : %s,Nama Kelas : %s,Jurusan : %s}",this.nim,this.nama,this.tanggalLahir,this.angkatan,this.kelas.getNama(),this.kelas.getJurusan());
   }
-      public static void main(String[] args){
 
-        List<Mahasiswa> list = new ArrayList<>();
-        list.add(new Mahasiswa("10511148","Dimas Maryanto",1992-03-11,2014,"IF","Teknik Informatika") );
-        list.add(new Mahasiswa("10511150","Muhammad Yusuf",1994-01-20,2014,"SI","Sistem Informasi"));
-        list.add(new Mahasiswa("10511170","Adib",1995-02-12,2014,"IF","Teknik Informatika"));
-        list.add(new Mahasiswa("10511160","Hari Sapto Adi",1991-03-15,2014,"SI","Sistem Informatika"));
-        list.add(new Mahasiswa("10511110","Hariaty",1992-04-31,2014,"IF","Teknik Informatika"));
-
-        Mahasiswa pang = new java.util.ArrayList();
-        System.out.println(pang.toString());
-
-        list.forEach((isi)->{
-          System.out.println(isi);
-
-        }
-      );
-
-    }
     }
